@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AdactinAutomationSuite">
+
+<listeners>
+<listener class-name="com.adactin.listeners.MyListener"/>
+<listener class-name="com.adactin.ExtentReport.ExtentReporterNG"/>
+</listeners>
+
+  <test thread-count="5" name="AdactinHotelTest">
+    <classes>
+      <class name="com.adactin.testcases.SelectionPageTest"/>
+      <class name="com.adactin.testcases.LoginPageTest"/>
+      <class name="com.adactin.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
